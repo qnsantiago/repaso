@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="repaso.Page3">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Beige"/>
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+    <StackLayout>
+            <Label x:Name="lblusuario" HorizontalTextAlignment="End" TextColor="Red" FontSize="16" />
+            <Label Text="VENTANA 3" HorizontalTextAlignment="Center" FontSize="20"/>
+            
+            <Entry x:Name="txtDato" IsReadOnly="True"/>
+            <Entry x:Name="txtEstudiante" IsReadOnly="True"/>
+            <Button x:Name="btnSalir" Text="SALIR" Clicked="btnSalir_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
